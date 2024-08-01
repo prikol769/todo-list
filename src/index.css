@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #03a9f5;
+  color: #fff;
+  height: 75px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.list-items-wrapper {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-container button {
+  padding: 14px 20px;
+  margin: 8px 0;
+  background-color: #03a9f5;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+}
+
+.checkbox {
+  width: 25px;
+  height: 25px;
+}
+
+.list-item {
+  height: 77px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  border-bottom: 1px solid #8a8888;
+  width: 100%;
+}
+
+.list-item button {
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+}
+.delete-btn {
+  background-color: #f44336;
+}
+
+.delete-btn:disabled {
+  background-color: #e7e7e7;
+  opacity: 0.5;
+  color: #000;
+  cursor: not-allowed;
+}
+
+.edit-btn {
+  background-color: #abc70e;
+}
+
+.save-btn {
+  background-color: #04aa6d;
+}
+
+.edit-input {
+  width: 50%;
+  padding: 12px 20px;
+  font-size: 14px;
+}
