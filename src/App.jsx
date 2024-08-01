@@ -1,4 +1,3 @@
-import "./App.css";
 import ListItems from "./components/ListItems";
 
 function App() {

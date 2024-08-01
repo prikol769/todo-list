@@ -16,17 +16,10 @@ const ListItems = () => {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-        gap: 15,
-      }}
-    >
-      <div>
+    <div className="list-items-wrapper">
+      <div className="input-container">
         <input
+          className="add-input"
           type="text"
           value={newItemText}
           onChange={(e) => setNewItemText(e.target.value)}

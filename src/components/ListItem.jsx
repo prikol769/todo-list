@@ -10,15 +10,9 @@ const ListItem = ({ item, handleCheck, handleDelete, handleSave }) => {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        gap: 5,
-      }}
-    >
+    <div className="list-item">
       <input
+        className="checkbox"
         type="checkbox"
         checked={item.completed}
         onChange={() => handleCheck(item.id)}
@@ -26,11 +20,14 @@ const ListItem = ({ item, handleCheck, handleDelete, handleSave }) => {
       {isEditing ? (
         <>
           <input
+            className="edit-input"
             type="text"
             value={editedTitle}
             onChange={(e) => setEditedTitle(e.target.value)}
           />
-          <button onClick={saveHandler}>Save</button>
+          <button className="save-btn" onClick={saveHandler}>
+            Save
+          </button>
         </>
       ) : (
         <>
@@ -40,8 +37,11 @@ const ListItem = ({ item, handleCheck, handleDelete, handleSave }) => {
             {item.title}
           </p>
           <div>
-            <button onClick={() => setIsEditing(true)}>Edit</button>
+            <button className="edit-btn" onClick={() => setIsEditing(true)}>
+              Edit
+            </button>
             <button
+              className="delete-btn"
               onClick={() => handleDelete(item.id)}
               disabled={!item.completed}
             >
