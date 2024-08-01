@@ -4,7 +4,9 @@ import ListItems from "./components/ListItems";
 function App() {
   return (
     <>
-      <h1>Todo List</h1>
+      <header>
+        <h1>Todo List</h1>
+      </header>
       <ListItems />
     </>
   );
